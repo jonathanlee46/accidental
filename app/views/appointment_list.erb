@@ -1,0 +1,5 @@
+<% current_user.appointments.each do |apt| %>
+  <p>
+    On <%= apt.date %>, you have <%= apt.procedure %> with <%= apt.doctor_name %>, from <%= apt.time_start %> 'til <%= apt.time_end %>.
+  </p>
+<% end %>
