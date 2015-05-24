@@ -1,8 +1,23 @@
-<p>Welcome to AcciDental! Please log in!</p>
-<form action="/login" method="post">
-  <input type="text" name="email" placeholder="Email">
-  <input type="password" name="password" placeholder="Password">
-  <input type="submit" value="Log in">
-</form>
+<!DOCTYPE html>
 
-<p>Don't have an account yet?  Create one <a href="/register">here</a>!</p>
+
+<link rel="stylesheet" href="/css/login.css">
+
+<body>
+    
+    <p id="spacer"></p>
+    <p id="medium">Welcome to AcciDental!</p>
+    <p id="little">Please log in.</p>
+
+
+    
+    <form action="/login" method="post">
+      <p id="input"><input type="text" name="email" placeholder="Email"></p>
+        
+      <p id="input"><input type="password" name="password" placeholder="Password"></p>
+    
+      <p id="button"><input type="submit" value="Log in"></p>
+    </form>
+
+    <p id="medium">Don't have an account yet?  Create one <a href="/register">here</a>!</p>
+</body>
