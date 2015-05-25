@@ -1,0 +1,48 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url("http://i.imgur.com/uerx8CR.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat:no-repeat;
+  color: white;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: darkcyan;
+}
+
+#spacer {
+  margin: 20px;
+}
+
+#little {
+  margin: 5px;
+  border: 0px;
+  padding: 0px;
+}
+
+#medium {
+  margin: 10px;
+}
+
+#input {
+  text-align: center;
+  color: black;
+  border: 0;
+  padding: 0px;
+}
+
+#button {
+  color: white;
+  border: 0;
+  padding: 0px;
+}
+
+#center {
+  text-align: center;
+}
+
+li {
+  margin: 10px;
+}

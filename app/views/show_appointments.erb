@@ -1,10 +1,16 @@
 <form action="/logout" method="post">
   <input type="submit" value="Log out">
 </form>
+
+<p id="center">Welcome back, <%= current_user.name %>!  Here are your scheduled appointments.
+</p>
+
 <form action="/make_apt" method="get">
-  <input type="submit" value="Schedule appointment">
+  <p id="center">
+    <input type="submit" value="Schedule appointment">
+  </p>
 </form>
 
-<p>Welcome back, <%= current_user.name %>!  Here are your scheduled appointments.</p>
+<p id="spacer"></p>
 
 <%= erb :appointment_list %>

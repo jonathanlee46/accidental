@@ -2,16 +2,23 @@
   <input type="submit" value="Cancel">
 </form>
 
-<p>Please enter the following information to apply for an appointment.</p>
+<p id="center">Please enter the following information to apply for an appointment.</p>
+
 
 <form action="/make_apt" method="post">
-  <input type="text" name="procedure" placeholder="Procedure">
-  <input type="text" name="date" placeholder="Date">
-  <input type="text" name="time_start" placeholder="Start time">
-  <input type="text" name="time_end" placeholder="End time">
-  <input type="text" name="doctor_name" placeholder="Name of Doctor" value="Jennifer Wang">
-  <input type="submit" value="Register!">
+  <p id="input">
+    <input type="text" name="procedure" placeholder="Procedure">
+    <input type="text" name="date" placeholder="Date">
+    <input type="text" name="time_start" placeholder="Start time">
+    <input type="text" name="time_end" placeholder="End time">
+    <input type="text" name="doctor_name" placeholder="Name of Doctor" value="Jennifer Wang">
+  </p>
+
+  <p id="center">
+    <input type="submit" value="Register!">
+  </p>
+
 </form>
 
-<p>Here are your currently scheduled appointments.</p>
+<p id="center">Here are your currently scheduled appointments.</p>
 <%= erb :appointment_list %>
