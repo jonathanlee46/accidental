@@ -1,16 +1,20 @@
-<form action="/logout" method="post">
-  <input type="submit" value="Log out">
-</form>
 
-<p id="center">Welcome back, <%= current_user.name %>!  Here are your scheduled appointments.
-</p>
+<div class="topBoard">
+  <button class="top_button animated fadeInDown" id="logout_button"><input type="submit" value="Log out"></button>
+</div>
 
-<form action="/make_apt" method="get">
-  <p id="center">
-    <input type="submit" value="Schedule appointment">
-  </p>
-</form>
+<div class="blackBoard">
+  <p id="half_spacer"></p>
+  <div class="aptBoard animated fadeInDown">
 
-<p id="spacer"></p>
+    <p id="little_center">Welcome back, <%= current_user.name %>!  Here are your scheduled appointments.
+    </p>
 
-<%= erb :appointment_list %>
+    <p id="center">
+      <button class="button" id="make_apt_button"><input type="submit" value="Schedule appointment"></button>
+    </p>
+
+    <p id="quarter_spacer"></p>
+    <%= erb :appointment_list %>
+  </div>
+</div>

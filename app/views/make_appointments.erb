@@ -1,24 +1,29 @@
-<form action="/appointments" method="get">
-  <input type="submit" value="Cancel">
-</form>
 
-<p id="center">Please enter the following information to apply for an appointment.</p>
+<div class="newTopBoard">
+  <button class="top_button animated fadeInDown" id="cancel_button"><input type="submit" value="Cancel"></button>
+</div>
+
+<div class="makeAptBoard animated fadeInDown">
+
+  <p id="little_center">Please enter the following information to apply for an appointment.</p>
 
 
-<form action="/make_apt" method="post">
-  <p id="input">
-    <input type="text" name="procedure" placeholder="Procedure">
-    <input type="text" name="date" placeholder="Date">
-    <input type="text" name="time_start" placeholder="Start time">
-    <input type="text" name="time_end" placeholder="End time">
-    <input type="text" name="doctor_name" placeholder="Name of Doctor" value="Jennifer Wang">
-  </p>
+  <form action="/make_apt" method="post">
+    <p id="input">
+      <input type="text" name="procedure" placeholder="Procedure">
+      <input type="date" name="date" placeholder="Date" min=Date.today>
+      <input type="time" name="time_start" placeholder="Start time">
+      <input type="time" name="time_end" placeholder="End time">
+      <input type="text" name="doctor_name" placeholder="Name of Doctor" value="Jennifer Wang">
+    </p>
 
-  <p id="center">
-    <input type="submit" value="Register!">
-  </p>
+    <p id="center">
+      <input type="submit" value="Schedule it!">
+    </p>
 
-</form>
+  </form>
+  <p id="little_center">Here are your currently scheduled appointments:</p>
+  <%= erb :wide_appointment_list %>
 
-<p id="center">Here are your currently scheduled appointments.</p>
-<%= erb :appointment_list %>
+</div>
+

@@ -1,20 +1,30 @@
 body {
+  -webkit-tap-highlight-color:transparent;
   font-family: 'Montserrat', sans-serif;
   background: url("http://i.imgur.com/uerx8CR.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat:no-repeat;
-  color: white;
+  color: black;
 }
 
 input[type="submit"] {
   border: 0;
-  background: darkcyan;
+  background: #66CCFF;
 }
 
 #spacer {
-  margin: 20px;
+  margin: 150px;
 }
+
+#half_spacer {
+  margin: 80px;
+}
+
+#quarter_spacer {
+  margin: 40px;
+}
+
 
 #little {
   margin: 5px;
@@ -26,6 +36,10 @@ input[type="submit"] {
   margin: 10px;
 }
 
+#large {
+  margin: 20px;
+}
+
 #input {
   text-align: center;
   color: black;
@@ -33,16 +47,130 @@ input[type="submit"] {
   padding: 0px;
 }
 
-#button {
-  color: white;
-  border: 0;
+.button {
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  color: black;
   padding: 0px;
 }
+
+.top_button {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  color: black;
+  padding: 0px;
+}
+
+#little_center {
+  text-align: center;
+  padding-top: 8px;
+}
+
 
 #center {
   text-align: center;
 }
 
 li {
-  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 12px;
+}
+
+.loginBoard {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  top: 0px;
+  height: 300px;
+  width: 500px;
+}
+
+.regBoard {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  top: 0px;
+  height: 310px;
+  width: 500px;
+}
+
+.aptBoard {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  position: relative;
+  background-color: white;
+  top: 0px;
+  height: 118px;
+  width: 700px;
+}
+
+.listBoard {
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+/*  top: 0px;*/
+  height: 25px;
+  width: 700px;
+}
+
+.wideListBoard {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  top: 0px;
+  height: 25px;
+  width: 900px;
+}
+
+.makeAptBoard {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  top: 0px;
+  height: 170px;
+  width: 900px;
+}
+
+.logoutBoard {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  top: 0px;
+  height: 40px;
+  width: 500px;
+}
+
+
+
+.loginSpacer {
+  height: 12px;
+}
+
+.regSpacer {
+  height: 0px;
 }

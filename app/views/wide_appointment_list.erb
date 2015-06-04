@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="/css/apts.css">
+
+<% if current_user.appointments.length == 0 %>
+  <div class="listBoard">
+    <li>
+      You don't have any appointments!
+    </li>
+  </div>
+<% end %>
+
+<% current_user.appointments.each do |apt| %>
+  <div class="wideListBoard">
+    <li>
+      On <%= apt.date %>, you have <%= apt.procedure %> with <%= apt.doctor_name %>, from <%= apt.time_start %> 'til <%= apt.time_end %>.
+    </li>
+  </div>
+<% end %>
