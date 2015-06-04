@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string  :password_hash
       t.string  :email
       t.string  :phone
-      t.integer :is_doctor
+      t.string  :avatar
 
       t.timestamps
     end

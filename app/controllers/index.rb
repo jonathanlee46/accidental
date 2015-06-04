@@ -1,3 +1,4 @@
+
 get '/' do
   if current_user
     redirect '/appointments'
@@ -35,6 +36,13 @@ post '/register' do
     phone: params[:phone],
     )
   user.password = params[:password]
+
+  #get gravatar
+  email = params[:email].downcase
+  hash = Digest::MD5.hexdigest(email)
+  image_src = "http://www.gravatar.com/avatar/#{hash}"
+  user.avatar = image_src
+
   user.save!
 
   session[:user_id] = user.id

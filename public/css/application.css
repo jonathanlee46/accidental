@@ -61,7 +61,7 @@ input[type="submit"] {
 .top_button {
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 7px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   border: 0px;
@@ -115,7 +115,7 @@ li {
   position: relative;
   background-color: white;
   top: 0px;
-  height: 118px;
+  height: 125px;
   width: 700px;
 }
 
@@ -168,9 +168,13 @@ li {
 
 
 .loginSpacer {
-  height: 12px;
+  height: 5px;
 }
 
 .regSpacer {
   height: 0px;
+}
+
+#avatar {
+  margin-right: 0px;
 }
